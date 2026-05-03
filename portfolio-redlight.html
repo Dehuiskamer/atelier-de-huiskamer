@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Light District - Rubensian Dreamgirl - Atelier De Huiskamer</title>
+  <meta name="description" content="Red Light District - Artistieke adult content, alleen op uitnodiging.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-main">
+          <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 60 L50 40 L75 60 L75 90 L25 90 Z" fill="currentColor"/>
+          </svg>
+          <span class="logo-text">ADH</span>
+        </div>
+        <span class="logo-tagline">Tekst · Beeld · Smaak</span>
+      </a>
+      
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="portfolio-rubensian.html">Rubensian Dreamgirl</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Page Header -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h1>Red Light District</h1>
+          <p class="lead-text" style="margin: 0 auto;">
+            Alleen op uitnodiging
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Password Protected Content -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div style="max-width: 600px; margin: 0 auto; text-align: center;">
+          <!-- Password Form -->
+          <div class="password-overlay">
+            <form class="password-form" id="password-form">
+              <input 
+                type="password" 
+                id="password-input" 
+                class="password-input" 
+                placeholder="Voer wachtwoord in"
+                autocomplete="off"
+              >
+              <button type="submit" class="btn">Toegang</button>
+              <p class="password-error" id="password-error">Onjuist wachtwoord</p>
+            </form>
+          </div>
+          
+          <!-- Protected Content -->
+          <div id="protected-content" class="content-locked">
+            <div style="margin-top: var(--spacing-lg); background-color: rgba(255, 255, 255, 0.20); backdrop-filter: blur(8px); padding: var(--spacing-lg); border-radius: 8px; border: 1px solid var(--color-border);">
+              <p class="lead-text">
+                De collectie is in ontwikkeling. Artistieke beelden verschijnen hier 
+                zodra alles klaar is voor presentatie.
+              </p>
+              <p class="lead-text" style="margin-top: var(--spacing-md);">
+                Toegang krijg je op uitnodiging wanneer de collectie compleet is.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="portfolio-rubensian.html">Rubensian Dreamgirl</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copyright">&copy; 2026 Atelier De Huiskamer. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

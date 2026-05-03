@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Atelier De Huiskamer</title>
+  <meta name="description" content="Neem contact op met Atelier De Huiskamer voor samenwerkingen, vragen of projecten.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-main">
+          <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25 60 L50 40 L75 60 L75 90 L25 90 Z" fill="currentColor"/>
+          </svg>
+          <span class="logo-text">ADH</span>
+        </div>
+        <span class="logo-tagline">Tekst · Beeld · Smaak</span>
+      </a>
+      
+      <button class="menu-toggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="portfolio-rubensian.html">Rubensian Dreamgirl</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Page Header -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-content">
+          <h1>Laten we iets creëren</h1>
+          <p class="lead-text">
+            Of het nu gaat om een fotoshoot, een creatief project, of gewoon een idee dat je 
+            wilt delen — ik hoor graag van je. Elke samenwerking begint met een gesprek en 
+            aandacht voor wat je wil vertellen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Description -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="section-header">
+          <h2>Waarmee kan ik je helpen?</h2>
+        </div>
+        
+        <div style="max-width: 900px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--spacing-lg);">
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: var(--spacing-xs);">Fotografie</h3>
+            <p>Portret, street photography, en creatieve projecten op maat.</p>
+          </div>
+          
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: var(--spacing-xs);">AI Creaties</h3>
+            <p>Visuele verhalen en digitale kunst met AI als creatief gereedschap.</p>
+          </div>
+          
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: var(--spacing-xs);">Tekst & Content</h3>
+            <p>Verhalen, recepten en content die raakt en inspireert.</p>
+          </div>
+          
+          <div>
+            <h3 style="font-family: var(--font-display); font-size: 1.3rem; margin-bottom: var(--spacing-xs);">Rubensian Dreamgirl</h3>
+            <p>Artistiek modellenwerk dat klassieke schoonheid en hedendaagse visie samenbrengt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="contact-content">
+          <!-- Single White Box for Contact Form -->
+          <div style="max-width: 700px; margin: 0 auto; background-color: rgba(255, 255, 255, 0.20); backdrop-filter: blur(10px); padding: var(--spacing-lg); border-radius: 8px; border: 1px solid var(--color-border);">
+            
+            <!-- Choice between ADH and Rubensian -->
+            <div style="margin-bottom: var(--spacing-lg); text-align: center;">
+              <h3 style="margin-bottom: var(--spacing-md);">Wie wil je contacteren?</h3>
+              <div style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
+                <button type="button" class="contact-choice-btn active" data-email="dehuiskamerbavegem@outlook.com" data-name="Atelier De Huiskamer" style="padding: var(--spacing-sm) var(--spacing-md); border: 2px solid var(--color-text); background-color: var(--color-text); color: white; cursor: pointer; border-radius: 4px; font-family: var(--font-body); font-size: 1rem; transition: all 0.3s ease;">
+                  Atelier De Huiskamer
+                </button>
+                <button type="button" class="contact-choice-btn" data-email="model.mila@outlook.com" data-name="Rubensian Dreamgirl" style="padding: var(--spacing-sm) var(--spacing-md); border: 2px solid var(--color-text); background-color: transparent; color: var(--color-text); cursor: pointer; border-radius: 4px; font-family: var(--font-body); font-size: 1rem; transition: all 0.3s ease;">
+                  Rubensian Dreamgirl
+                </button>
+              </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <form id="contact-form">
+              <div style="margin-bottom: var(--spacing-md);">
+                <label for="name" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 500;">Naam</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  required 
+                  class="password-input" 
+                  style="width: 100%; background-color: rgba(255, 255, 255, 0.3);"
+                  placeholder="Je naam"
+                >
+              </div>
+              
+              <div style="margin-bottom: var(--spacing-md);">
+                <label for="email" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 500;">E-mail</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  required 
+                  class="password-input" 
+                  style="width: 100%; background-color: rgba(255, 255, 255, 0.3);"
+                  placeholder="je@email.com"
+                >
+              </div>
+              
+              <div style="margin-bottom: var(--spacing-md);">
+                <label for="message" style="display: block; margin-bottom: var(--spacing-xs); font-weight: 500;">Bericht</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  required 
+                  rows="6"
+                  class="password-input" 
+                  style="width: 100%; resize: vertical; font-family: var(--font-body); background-color: rgba(255, 255, 255, 0.3);"
+                  placeholder="Vertel me over je project, vraag of idee..."
+                ></textarea>
+              </div>
+              
+              <button type="submit" class="btn" style="width: 100%;">Verstuur Bericht</button>
+              <p id="form-message" style="margin-top: var(--spacing-sm); text-align: center; display: none;"></p>
+            </form>
+            
+            <!-- Contact Info Below Form -->
+            <div style="margin-top: var(--spacing-lg); padding-top: var(--spacing-lg); border-top: 1px solid rgba(224, 224, 224, 0.3); text-align: center;">
+              <p style="margin-bottom: var(--spacing-sm);"><strong>Direct Contact</strong></p>
+              <p style="margin-bottom: var(--spacing-xs);">
+                <span style="font-weight: 500;">Atelier De Huiskamer:</span><br>
+                <a href="mailto:dehuiskamerbavegem@outlook.com" style="color: var(--color-text-secondary);">dehuiskamerbavegem@outlook.com</a>
+              </p>
+              <p>
+                <span style="font-weight: 500;">Rubensian Dreamgirl:</span><br>
+                <a href="mailto:model.mila@outlook.com" style="color: var(--color-text-secondary);">model.mila@outlook.com</a>
+              </p>
+            </div>
+            
+            <!-- Location -->
+            <div style="margin-top: var(--spacing-md); text-align: center; color: var(--color-text-secondary); font-size: 0.9rem;">
+              <p>📍 Bavegem, België</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Availability Schedule -->
+    <section class="section">
+      <div class="container">
+        <div style="max-width: 600px; margin: 0 auto; background-color: rgba(255, 255, 255, 0.20); backdrop-filter: blur(10px); padding: var(--spacing-lg); border-radius: 8px; border: 1px solid var(--color-border);">
+          <h2 style="text-align: center; margin-bottom: var(--spacing-md);">Beschikbaarheid</h2>
+          <p style="text-align: center; margin-bottom: var(--spacing-lg); color: var(--color-text-secondary);">
+            Fotoshoots en samenwerkingen gebeuren op afspraak. Dit is mijn algemene beschikbaarheid:
+          </p>
+          
+          <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+              <tr style="border-bottom: 2px solid rgba(0, 0, 0, 0.1);">
+                <th style="text-align: left; padding: var(--spacing-sm); font-family: var(--font-display); font-size: 1.1rem;">Dag</th>
+                <th style="text-align: right; padding: var(--spacing-sm); font-family: var(--font-display); font-size: 1.1rem;">Tijden</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid rgba(0, 0, 0, 0.05);">
+                <td style="padding: var(--spacing-sm);">Maandag - Zaterdag</td>
+                <td style="padding: var(--spacing-sm); text-align: right; color: var(--color-text-secondary);">Op afspraak<br><span style="font-size: 0.9rem;">10:00 - 18:00<br>(laatste afspraak om 14:00)</span></td>
+              </tr>
+              <tr>
+                <td style="padding: var(--spacing-sm);">Zondag</td>
+                <td style="padding: var(--spacing-sm); text-align: right; color: var(--color-text-secondary);">Gesloten</td>
+              </tr>
+            </tbody>
+          </table>
+          
+          <p style="margin-top: var(--spacing-lg); text-align: center; color: var(--color-text-secondary); font-size: 0.9rem;">
+            <em>Voor urgente aanvragen of specifieke data, neem contact op via het formulier hierboven.</em>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="portfolio-rubensian.html">Rubensian Dreamgirl</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copyright">&copy; 2026 Atelier De Huiskamer. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
