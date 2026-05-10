@@ -13,6 +13,71 @@
   
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .blog-grid {
+      max-width: 700px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: var(--spacing-lg);
+    }
+
+    .blog-card {
+      background-color: rgba(255, 255, 255, 0.20);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: var(--spacing-lg);
+      text-decoration: none;
+      display: block;
+      transition: border-color 0.3s ease, background-color 0.3s ease;
+    }
+
+    .blog-card:hover {
+      border-color: var(--color-text-secondary);
+      background-color: rgba(255, 255, 255, 0.30);
+    }
+
+    .blog-card-meta {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-text-secondary);
+      margin-bottom: 0.75rem;
+    }
+
+    .blog-card-title {
+      font-family: var(--font-heading);
+      font-size: 1.6rem;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--color-text-primary);
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+
+    .blog-card-excerpt {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--color-text-secondary);
+      margin-bottom: 1.25rem;
+    }
+
+    .blog-card-read {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-text-primary);
+    }
+
+    .blog-card-read::after {
+      content: ' →';
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation -->
@@ -37,7 +102,7 @@
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
         <li><a href="portfolio-rubensian.html">Rubensian Dreamgirl</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
@@ -52,8 +117,7 @@
         <div class="section-header">
           <h1>Blog</h1>
           <p class="lead-text" style="margin: 0 auto;">
-            Recepten uit De Huiskamer, tips over fotografie, reflecties over creativiteit, 
-            en verhalen over de reis van idee naar creatie.
+            Fotografie, reflecties over creativiteit, en verhalen over de reis van idee naar creatie.
           </p>
         </div>
       </div>
@@ -62,16 +126,20 @@
     <!-- Blog Posts -->
     <section class="section" style="padding-top: 0;">
       <div class="container">
-        <div style="max-width: 700px; margin: 0 auto; background-color: rgba(255, 255, 255, 0.20); backdrop-filter: blur(8px); padding: var(--spacing-lg); border-radius: 8px; border: 1px solid var(--color-border); text-align: center;">
-          <p class="lead-text">
-            Een blog is meer dan een verzameling woorden — het is een gesprek dat zich 
-            ontvouwt over tijd. Recepten die gedeeld willen worden, fotografie-inzichten 
-            die nuttig zijn, verhalen die de moeite waard zijn om te vertellen.
-          </p>
-          <p class="lead-text" style="margin-top: var(--spacing-md);">
-            Ik ben aan het schrijven. De eerste verhalen verschijnen hier zodra ze klaar zijn 
-            om gedeeld te worden — want haast doet zelden goed.
-          </p>
+        <div class="blog-grid">
+
+          <a href="blog-tfp-modellen.html" class="blog-card">
+            <p class="blog-card-meta">Fotografie · mei 2026</p>
+            <h2 class="blog-card-title">Op zoek naar jou</h2>
+            <p class="blog-card-excerpt">
+              Fotografie begint voor mij nooit met een camera. Het begint met een idee, 
+              een sfeer, iets dat ik wil vastleggen voor het verdwijnt. De mooiste beelden 
+              die ik maak, zijn die van mensen. Van vrouwen die iets willen vertellen — 
+              ook al weten ze zelf nog niet altijd wat.
+            </p>
+            <span class="blog-card-read">Lees verder</span>
+          </a>
+
         </div>
       </div>
     </section>
